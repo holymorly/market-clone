@@ -45,7 +45,7 @@ main {
 }
 
 .write-btn {
-  background-color: #ff6e00;
+  background-color: var(--button-primary);
   color: white;
   padding: 10px 15px 10px 15px;
   position: fixed;
@@ -55,6 +55,11 @@ main {
   border-radius: 25px;
   font-size: 15px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.write-btn:hover {
+  background-color: var(--button-hover);
 }
 
 .media-info-msg {
@@ -70,7 +75,7 @@ main {
   opacity: 1;
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 700px) {
   .media-info-msg {
     opacity: 0;
   }
