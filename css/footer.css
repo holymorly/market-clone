@@ -37,3 +37,22 @@ footer {
   font-weight: bold;
   transform: scale(1);
 }
+
+@keyframes icons-둥-둥 {
+  0% {
+    transform: translateY(0px);
+  }
+  30% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.footer-icorns:hover .footer-icorns__img {
+  animation: 2s icons-둥-둥 infinite;
+}
